@@ -30,7 +30,8 @@
 		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"dependencies": {
-		"kleur": "4.1.5"
+		"kleur": "4.1.5",
+		"@pieces.app/pieces-os-client": "4.0.0"
 	},
 	"devDependencies": {
 		"@playform/build": "0.1.2"
