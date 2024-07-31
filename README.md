@@ -1,4 +1,4 @@
-# 🗣️ [Summary] —
+# 🗣️ [Summary]
 
 [Summary] is a powerful TypeScript library designed for efficient Git repository
 analysis and summarization. It offers both sequential and parallel processing
@@ -7,9 +7,8 @@ the [@pieces.app/pieces-os-client] SDK for enhanced functionality. Additionally,
 [Summary] communicates with a Rust SDK via WebSockets for improved performance
 and extended capabilities.
 
-[Summary]: https://www.npmjs.com/package/@playform/summary
-[@pieces.app/pieces-os-client]:
-	https://www.npmjs.com/package/@pieces.app/pieces-os-client
+[Summary] will generate a comprehensive summary of all commits and tags between
+the first and the last commit in your Git repository.
 
 ```typescript
 import { Summary } from "@playform/summary";
@@ -18,9 +17,6 @@ new Summary().generateSummary({ Parallel: true }).then((Output) => {
 	console.log(Output);
 });
 ```
-
-[Summary] will generate a comprehensive summary of all commits and tags between
-the first and the last commit in your Git repository.
 
 ## Features
 
@@ -32,6 +28,15 @@ the first and the last commit in your Git repository.
 -   Integration with [Pieces OS] via [@pieces.app/pieces-os-client] SDK
 -   Parallel and sequential processing modes
 -   WebSocket communication with Rust SDK for enhanced performance
+-   Support for multiple programming languages and file types
+-   Configurable logging levels
+-   Efficient handling of large repositories
+-   Asynchronous processing using Tokio runtime
+-   Flexible command-line interface using Clap
+-   Concurrent hash map implementation for improved performance
+-   Advanced regex-based file filtering and omission
+-   Customizable diff options for fine-grained control
+-   Integration with external AI services for code analysis (via Pieces OS)
 
 ## [Pieces OS] Integration and Rust SDK Communication
 
@@ -43,8 +48,8 @@ SDK, allowing it to:
 -   Offer improved context-aware processing of repository changes
 -   Seamlessly interact with other [Pieces OS]-compatible development tools
 
-Furthermore, [Summary] establishes a WebSocket connection with the `Summary` Rust SDK,
-enabling:
+Furthermore, [Summary] establishes a WebSocket connection with the Summary Rust
+SDK, enabling:
 
 -   Real-time, high-performance data processing
 -   Efficient handling of large repositories and complex operations
@@ -69,7 +74,7 @@ Here's a basic example of how to use the Summary library:
 import { Summary, SummaryOptions } from "@playform/summary";
 import { PiecesApi } from "@pieces.app/pieces-os-client";
 
-new Summary(new PiecesApi());
+const summary = new Summary(new PiecesApi());
 
 summary
 	.generateSummary({
@@ -88,59 +93,59 @@ summary
 
 The [Summary] library can be used with various options:
 
-#### Exclude
+### Exclude
 
 Exclude certain files or directories.
 
 ```typescript
 {
-	Exclude: ["node_modules"],
-};
+    Exclude: ["node_modules"],
+}
 ```
 
-#### Omit
+### Omit
 
 Specify regex Patterns to Omit files from processing.
 
 ```typescript
 {
-	Omit: [
-		/(?i)documentation/,
-		/(?i)target/,
-		/(?i)changelog\.md$/,
-		/(?i)summary\.md$/,
-	],
-};
+    Omit: [
+        /(?i)documentation/,
+        /(?i)target/,
+        /(?i)changelog\.md$/,
+        /(?i)summary\.md$/,
+    ],
+}
 ```
 
-#### Parallel
+### Parallel
 
 Run processing in Parallel.
 
 ```typescript
 {
-	Parallel: true,
-};
+    Parallel: true,
+}
 ```
 
-#### Pattern
+### Pattern
 
 Specify a custom Pattern for matching.
 
 ```typescript
 {
-	Pattern: ".git",
-};
+    Pattern: ".git",
+}
 ```
 
-#### Root
+### Root
 
 Set the current working directory to a different folder.
 
 ```typescript
 {
-	Root: "/path/to/repository",
-};
+    Root: "/path/to/repository",
+}
 ```
 
 For [Pieces OS] integration, refer to the [@pieces.app/pieces-os-client] documentation
