@@ -1,0 +1,1 @@
+import{WellKnownApi as n,Configuration as t}from"@pieces.app/pieces-os-client";import{platform as l}from"os";new n(t({basePath:`http://localhost:${l()==="linux"?5323:1e3}`})).getWellKnownHealth().then(o=>{console.log(o)}).catch(o=>console.error(o));
