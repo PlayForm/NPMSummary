@@ -8,6 +8,6 @@ new WellKnownApi(
 )
 	.getWellKnownHealth()
 	.then((Message: string) => {
-		console.log(Message); // ok
+		console.log(Message);
 	})
 	.catch((_Error: unknown) => console.error(_Error));
