@@ -1,5 +1,5 @@
-import { WellKnownApi, Configuration } from "@pieces.app/pieces-os-client";
 import { platform } from "os";
+import { Configuration, WellKnownApi } from "@pieces.app/pieces-os-client";
 
 new WellKnownApi(
 	Configuration({
