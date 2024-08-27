@@ -60,13 +60,13 @@ By leveraging both [Pieces OS] and the Rust SDK, [Summary] can tap into a broade
 ecosystem of development tools and services, significantly expanding its capabilities
 beyond basic file processing while ensuring optimal performance.
 
-## Installation
+## 🚀 Installation
 
 ```sh
 npm install @playform/summary @pieces.app/pieces-os-client
 ```
 
-## Usage
+## 🛠️ Usage
 
 Here's a basic example of how to use the Summary library:
 
