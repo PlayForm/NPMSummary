@@ -212,7 +212,7 @@ new Summary(new PiecesApi())
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for a history of changes to this library.
+See [`CHANGELOG.md`](CHANGELOG.md) for a history of changes to this library.
 
 [Summary]: https://www.npmjs.com/package/@playform/summary
 [Pieces OS]: https://pieces.app
