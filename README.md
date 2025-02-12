@@ -18,7 +18,7 @@ new Summary().generateSummary({ Parallel: true }).then((Output) => {
 });
 ```
 
-## Features
+## Feature
 
 -   Customizable file pattern matching
 -   Diff generation between Git tags
