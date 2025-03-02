@@ -20,45 +20,45 @@ new Summary().generateSummary({ Parallel: true }).then((Output) => {
 
 ## Feature
 
--   Customizable file pattern matching
--   Diff generation between Git tags
--   Directory traversal and file filtering
--   Exclusion of specified files or directories
--   Git repository analysis
--   Integration with [Pieces OS] via [@pieces.app/pieces-os-client] SDK
--   Parallel and sequential processing modes
--   WebSocket communication with Rust SDK for enhanced performance
--   Support for multiple programming languages and file types
--   Configurable logging levels
--   Efficient handling of large repositories
--   Asynchronous processing using Tokio runtime
--   Flexible command-line interface using Clap
--   Concurrent hash map implementation for improved performance
--   Advanced regex-based file filtering and omission
--   Customizable diff options for fine-grained control
--   Integration with external AI services for code analysis (via Pieces OS)
+- Customizable file pattern matching
+- Diff generation between Git tags
+- Directory traversal and file filtering
+- Exclusion of specified files or directories
+- Git repository analysis
+- Integration with [Pieces OS] via [@pieces.app/pieces-os-client] SDK
+- Parallel and sequential processing modes
+- WebSocket communication with Rust SDK for enhanced performance
+- Support for multiple programming languages and file types
+- Configurable logging levels
+- Efficient handling of large repositories
+- Asynchronous processing using Tokio runtime
+- Flexible command-line interface using Clap
+- Concurrent hash map implementation for improved performance
+- Advanced regex-based file filtering and omission
+- Customizable diff options for fine-grained control
+- Integration with external AI services for code analysis (via Pieces OS)
 
 ## [Pieces OS] Integration and Rust SDK Communication
 
-The [Summary] library integrates with [Pieces OS] through the [@pieces.app/pieces-os-client]
-SDK, allowing it to:
+The [Summary] library integrates with [Pieces OS] through the
+[@pieces.app/pieces-os-client] SDK, allowing it to:
 
--   Generate comprehensive diff logs and release notes automatically
--   Provide AI-driven code analysis and insights
--   Offer improved context-aware processing of repository changes
--   Seamlessly interact with other [Pieces OS]-compatible development tools
+- Generate comprehensive diff logs and release notes automatically
+- Provide AI-driven code analysis and insights
+- Offer improved context-aware processing of repository changes
+- Seamlessly interact with other [Pieces OS]-compatible development tools
 
 Furthermore, [Summary] establishes a WebSocket connection with the Summary Rust
 SDK, enabling:
 
--   Real-time, high-performance data processing
--   Efficient handling of large repositories and complex operations
--   Access to Rust's powerful concurrency and memory safety features
--   Seamless integration of Rust-based algorithms and utilities
+- Real-time, high-performance data processing
+- Efficient handling of large repositories and complex operations
+- Access to Rust's powerful concurrency and memory safety features
+- Seamless integration of Rust-based algorithms and utilities
 
-By leveraging both [Pieces OS] and the Rust SDK, [Summary] can tap into a broader
-ecosystem of development tools and services, significantly expanding its capabilities
-beyond basic file processing while ensuring optimal performance.
+By leveraging both [Pieces OS] and the Rust SDK, [Summary] can tap into a
+broader ecosystem of development tools and services, significantly expanding its
+capabilities beyond basic file processing while ensuring optimal performance.
 
 ## Installation 🚀
 
@@ -71,8 +71,8 @@ npm install @playform/summary @pieces.app/pieces-os-client
 Here's a basic example of how to use the Summary library:
 
 ```typescript
-import { Summary, SummaryOptions } from "@playform/summary";
 import { PiecesApi } from "@pieces.app/pieces-os-client";
+import { Summary, SummaryOptions } from "@playform/summary";
 
 const summary = new Summary(new PiecesApi());
 
@@ -148,8 +148,8 @@ Set the current working directory to a different folder.
 }
 ```
 
-For [Pieces OS] integration, refer to the [@pieces.app/pieces-os-client] documentation
-for specific configuration options.
+For [Pieces OS] integration, refer to the [@pieces.app/pieces-os-client]
+documentation for specific configuration options.
 
 ## Examples
 
@@ -204,11 +204,11 @@ new Summary(new PiecesApi())
 
 [Summary] relies on several npm packages to provide its functionality:
 
--   @pieces.app/pieces-os-client - For integration with Pieces OS
--   simple-git - For Git repository operations
--   glob - For file Pattern matching
--   diff - For generating diffs between files
--   worker-threads - For Parallel processing
+- @pieces.app/pieces-os-client - For integration with Pieces OS
+- simple-git - For Git repository operations
+- glob - For file Pattern matching
+- diff - For generating diffs between files
+- worker-threads - For Parallel processing
 
 ## Changelog
 
