@@ -34,7 +34,7 @@
 		"kleur": "4.1.5"
 	},
 	"devDependencies": {
-		"@playform/build": "0.2.3"
+		"@playform/build": "0.2.4"
 	},
 	"publishConfig": {
 		"access": "public",
