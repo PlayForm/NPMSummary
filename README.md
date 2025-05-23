@@ -214,7 +214,7 @@ new Summary(new PiecesApi())
 
 See [`CHANGELOG.md`](CHANGELOG.md) for a history of changes to this library.
 
-[Summary]: HTTPS://www.npmjs.com/package/@playform/summary
-[Pieces OS]: HTTPS://pieces.app
+[Summary]: https://www.npmjs.com/package/@playform/summary
+[Pieces OS]: https://pieces.app
 [@pieces.app/pieces-os-client]:
-	HTTPS://www.npmjs.com/package/@pieces.app/pieces-os-client
+	https://www.npmjs.com/package/@pieces.app/pieces-os-client

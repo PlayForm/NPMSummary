@@ -8,9 +8,9 @@
 		"performance",
 		"playform"
 	],
-	"homepage": "HTTPS://GitHub.Com/PlayForm/Summary#readme",
+	"homepage": "https://GitHub.Com/PlayForm/Summary#readme",
 	"bugs": {
-		"url": "HTTPS://GitHub.Com/PlayForm/Summary/issues"
+		"url": "https://GitHub.Com/PlayForm/Summary/issues"
 	},
 	"repository": {
 		"type": "git",
@@ -20,7 +20,7 @@
 	"author": {
 		"name": "Source ✍🏻 Open 👐🏻",
 		"email": "Source/Open@PlayForm.Cloud",
-		"url": "HTTPS://PlayForm.Cloud"
+		"url": "https://PlayForm.Cloud"
 	},
 	"type": "module",
 	"main": "./Target/Function/Summary.js",
